@@ -35,6 +35,8 @@ below:<br>
 ### Set a Webhook on Github repository
 In order to create a webhook that will start the Jenkins pipeline every time a code is merged to the main branch, we need to do the following:<br>
 - On the GitHub repository, go to 'setting'--> 'Webhooks' and create a new webhook with 'Payload URL' as 'http://<jenkins_server_ip>:8080/webhook', 'content Type' as 'application/json' and press 'Active' (it's also better to create a secret to add to the webhook, go to http://<jenkins_server_ip>:8080/user/admin/configure, create a new token and set on the Webhook in Github).
+![image](https://user-images.githubusercontent.com/64369709/229141550-f963a93c-93dc-4f5f-bcaa-e1300b6a7ed3.png)
+
 <br><br>
 
 ### Set a reposetory on DockerHub
