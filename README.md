@@ -48,4 +48,5 @@ In order to push our python-app docker image to DockerHub we need to do the foll
 <br>
 
 ### Test the Deployment pipeline
-Check that on every merge to mina from PR, the pipeline is start running and deploying the 'deployment-py-app'<br>
+Check that on every PR and merge to 'main' branch, the pipeline is start running and deploying the 'deployment-py-app'<br>
+Verify the Python app is running and updating on every change.<br>
