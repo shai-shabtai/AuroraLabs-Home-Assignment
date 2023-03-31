@@ -52,3 +52,14 @@ In order to push our python-app docker image to DockerHub we need to do the foll
 ### Test the Deployment pipeline
 Check that on every PR and merge to 'main' branch, the pipeline is start running and deploying the 'deployment-py-app'<br>
 Verify the Python app is running and updating on every change.<br>
+- Pipline is running and all stages finished:
+![image](https://user-images.githubusercontent.com/64369709/229147129-9bf2d4df-92d7-4b7a-bca6-1c0d534c1196.png)
+<br>
+- The app is working and the URL respose:
+
+![image](https://user-images.githubusercontent.com/64369709/229147548-e8e53ed4-2088-4fa7-bedb-c799acbf690e.png)
+
+** I this case I decided to run the Python app on the same server/computer as the Jenkins, this is the reason of the 'deploy.sh' I wrote.<br>
+   In a "real world" case I would have connect to the APP server with SSH and run the deploy on it or use even more advanced methods.
+
+
