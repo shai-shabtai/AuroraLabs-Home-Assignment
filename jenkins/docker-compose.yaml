@@ -1,0 +1,19 @@
+version: '3.8'
+services:
+    jenkins:
+        build: .
+        image: jenkins-shai:lts
+        container_name: jenkins
+        restart: unless-stopped
+        user: root
+        privileged: true
+        ports:
+            - '8080:8080'
+            - '50000:50000'
+        volumes:
+            - /var/run/docker.sock:/var/run/docker.sock
+            - /var/lib/docker/volumes/jenkins_home/_data:/var/jenkins_home
+        networks:
+            - jenkins
+networks:
+  jenkins:
