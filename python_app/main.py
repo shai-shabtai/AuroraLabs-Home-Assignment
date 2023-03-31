@@ -8,7 +8,7 @@ def get_response():
     return("Devops is great")
 
 @app.route("/healthcheck")
-async def check_health():
+def check_health():
     return {"status": "ok"}
 
 if __name__ == "__main__":
