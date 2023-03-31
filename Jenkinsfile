@@ -55,8 +55,8 @@ pipeline {
     }
 	post {
         always {
-                sh "docker stop count-service-check"
-            	sh "docker rm count-service-check"
+                sh "docker stop py-app-check"
+            	sh "docker rm py-app-check"
         }
     }
 }
